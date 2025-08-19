@@ -1,0 +1,153 @@
+.container {
+    width: 100%;
+    font-family: 'Poppins';
+}
+
+.container .row {
+    margin-top: 100px;
+    margin: 50px;
+}
+
+.imagem {
+    padding: 10px;
+    width: 200px;
+    position: relative;
+    left: 10%;
+}
+
+.card-body {
+    position: relative;
+    border-color: #000000;
+}
+
+.col {
+    border: 10px #000000;
+    border-radius: 0%;
+    position: static;
+    width: 300px;
+
+}
+
+.col h1 {
+    color: #fff;
+    font-style: normal;
+    font-size: 45px;
+    text-align: left;
+}
+
+
+.col h3 {
+    color: #e0e0e0;
+    font-style: normal;
+    font-size: 25px;
+    text-align: left;
+    margin-top: 50px;
+    border-style: solid;
+    border-color: #e0e0e0;
+
+    border-right-width: 0px;
+    border-left-width: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.col p {
+
+    color: #000;
+    font-style: bold;
+    font-size: 40px;
+    margin-top: 40px;
+}
+
+.col #subs {
+    margin-top: 40px;
+    color: #e0e0e0;
+    font-style: italic;
+    font-size: 20px;
+
+}
+
+#home {
+    background-color: #6e4cbe;
+}
+
+#footer {
+    background-color: #000000;
+    margin-top: 10%;
+}
+
+#headerHome {
+    background-color: #000000;
+    position: relative;
+    font-size: large;
+}
+
+#btnUser {
+    text-decoration: none;
+    color: #e7e42e;
+    font-size: 20px;
+    margin: 20px;
+}
+
+#BtnHead {
+    display: flex;
+    flex-direction: column;
+}
+
+#btnComprar {
+    position: absolute;
+    top: 25;
+    right: 10;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.col:hover #btnVerMais {
+    display: block;
+}
+
+.col:hover #btnVerMais {
+    opacity: 1;
+}
+
+#cardsItem {
+    border: #000000;
+}
+
+/*Body*/
+
+#navHome {
+    font-size: 15px;
+
+}
+
+footer ul li {
+    color: #ffffff
+}
+
+form button[type="submit"] {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    width: 25%;
+    margin: 10px;
+    margin-left: 40%;
+}
+
+/* Estilo do botão de envio do formulário ao passar o mouse */
+form button[type="submit"]:hover {
+    background-color: #1D5C96;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 15%;
+}

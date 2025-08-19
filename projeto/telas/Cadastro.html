@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <!--Função JS para mostrar ou esconder a senha-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+      function mostrarSenha() {
+            var x = document.getElementById("senhaPwd");
+            if (x.type === "password") {
+              x.type = "text";
+            } else {
+              x.type = "password";
+            }
+          }
+          document.getElementById("mostrarSenhaCheckbox").addEventListener("click", mostrarSenha);
+    </script>
+
+    <!--Fim da Função JS-->
+    <link rel="stylesheet" href="../css/Cadastro.css" />
+    <title>Cadastro Usuário</title>
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #e3f2fd;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="HomeAdmin.php">Dashboard</a>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="CadastroProduto.php">Cadastrar Produtos</a>
+            <a class="nav-link" href="Cadastro.html">Cadastrar Usuarios</a>
+            <a class="nav-link" href="ListarProduto.php">Listar Produtos</a>
+            <a class="nav-link" href="ListarUsuario.php">Lista de Usuarios</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--Fim da Navbar-->
+
+    <div class="container my-4">
+    <form method="POST" action="../php/Cadastro.php" id="formularioCadastro">
+
+          <div class="col-12">
+            <h1 class="text-center mb-3">Cadastro de usuário</h1>
+
+            <!-- Campo Nome -->
+            <label for="nome">Nome</label>
+            <div class="form mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="nome"
+                name="nome"
+              />
+            </div>
+
+            <!-- Campo CPF -->
+            <label for="Cpf">CPF</label>
+            <div class="form mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="Cpf"
+                name="Cpf"
+ 
+                pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+                required
+              />
+            </div>
+
+            <!-- Campo E-mail -->
+            <label for="Email">E-mail</label>
+            <div class="form mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="Email"
+                name="Email"
+              />
+            </div>
+
+            <!-- Campo Senha -->
+            <label for="Senha">Senha</label>
+            <div class="form mb-3">
+              <input
+                type="password"
+                class="form-control"
+                id="Senha"
+                name="Senha"           
+              />
+            </div>
+            
+             <!-- Campo Senha -->
+             <label for="Senha">Confirmar Senha</label>
+             <div class="form mb-3">
+               <input
+                 type="password"
+                 class="form-control"
+                 id="Senha"
+                 name="ConfirmarSenha"              
+               />
+             </div>
+
+             <!--Campo Permissao-->
+             <div class="input-field col s12">
+              <select name="cargo">
+                <option value="" disabled selected>Escolha sua área</option>
+                <option value="Admin" name="cargo">Admin</option>
+                <option value="Estoquista" name="cargo">Estoquista</option>
+              </select>
+            </div>
+
+            <!-- Botão de Cadastro -->
+            <div class="d-grid">
+              <button class="btn btn-primary" type="submit" action="Cadastro.php" id="btnEnviar">Cadastrar</button>
+            </div>
+            <!--Fim do botão-->
+        </div>
+ 
+    </form> 
+    
+<!--Modal para aviso caso erro de cadastro-->
+  <div id="modalFalha" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-success text-center">
+            <h5 class="modal-title" id="visulUsuarioModalLabel">Usuário</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Usuário cadastrado com sucesso!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-info" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <!--Script para executar o modal (Ainda não está pronto)-->
+  <script>
+      function exibirModalFalha() {
+        // Obter referência ao modal
+        const modal = document.getElementById("modalFalha");
+
+        // Exibir o modal
+        modal.style.display = "block";
+      }
+
+      // Uso de exemplo:
+      const form = document.getElementById("formularioCadastro");
+      const btnEnviar = document.getElementById("btnEnviar");
+
+      btnEnviar.addEventListener("click", function(event) {
+        // Simulando uma falha no cadastro
+        const cadastroValido = true;
+
+        if (!cadastroValido) {
+          // Evitar o envio do formulário
+          event.preventDefault();
+
+          // Exibir o modal de falha
+          exibirModalFalha();
+        }
+      });
+  </script>
+  </body>
+</html>

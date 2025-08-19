@@ -1,0 +1,211 @@
+.container {
+    font-family: 'Poppins';
+}
+
+
+.imagem {
+    padding: 10px;
+    width: 200px;
+    position: relative;
+}
+
+.Carrinho {
+    font-family: 'Poppins';
+    background-color: #6e4cbe;
+    border: #000;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    display: flex;
+
+}
+
+.Produto {
+    background-color: #848484;
+    margin-top: 30px;
+    border: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    display: flex;
+    width: 50%;
+    margin: 50px;
+}
+
+.btnPagar{
+    background-color: #006400;
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    height: 30px;
+    width: 50px;
+}
+
+.InfoCart {
+    background-color: #fff;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    text-align: left;
+    padding: 10px;
+
+}
+
+
+.col #subs {
+    margin-top: 40px;
+    color: #848484;
+    font-style: italic;
+    font-size: 20px;
+}
+
+#home {
+    flex: 1;
+    
+    border: 1px;
+}
+
+#row{
+    background-color: #6e4cbe;
+    font-family: 'Poppins';
+}
+
+#btnPagar{
+    width: 100%;
+}
+
+#footer{
+    background-color: #000;
+    bottom: 0;
+    right: 0;
+    position: relative;
+    width: 100%;
+   
+  }
+  
+
+#Enderecos{
+margin-bottom: 20px;
+margin-top: 20px;
+
+}
+
+#headerHome {
+    background-color: #000;
+}
+
+#btnUser {
+    text-decoration: none;
+    color: #1D5C96;
+    font-size: 20px;
+    margin: 20px;
+}
+
+#BtnHead {
+    display: flex;
+    flex-direction: column;
+}
+
+#btnComprar {
+    position: absolute;
+    top: 25;
+    right: 10;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.col:hover #btnVerMais {
+    display: block;
+}
+
+.col:hover #btnVerMais {
+    opacity: 1;
+}
+
+#cardsItem {
+    border: #000000;
+}
+
+#navHome {
+    font-size: 20px;
+
+}
+
+/*Body*/
+body {
+    flex: 1;
+    background-color: #6e4cbe;
+}
+
+ul li {
+    color: #000000;
+}
+
+form button[type="submit"] {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    width: 25%;
+    margin: 10px;
+    margin-left: 40%;
+}
+
+/* Estilo do botão de envio do formulário ao passar o mouse */
+form button[type="submit"]:hover {
+    background-color: #1D5C96;
+}
+
+h3 {
+    text-align: left;
+    margin-bottom: 15%;
+}
+h4 {
+    text-align: left;
+    margin-bottom: 15%;
+   
+}
+
+thead {
+    background-color: #000;
+    margin: 10px;
+}
+
+tr {
+    text-align: center;
+    color: #fff;
+    margin: 10px;
+}
+
+td {
+    padding: 25px;
+    
+}
+
+table{
+    border: 1px;
+    border-color: #000;
+    border-style: groove;
+    margin-left: 25%;
+}
+
+
+#lbChecout{
+    color: #fff;
+    text-align: center;
+    font-size: x-large;
+    align-self: center;
+    margin-left: 45%;
+}
+
+#TotalCheck{
+    text-align: center;
+    margin-bottom: 5%;
+}
+

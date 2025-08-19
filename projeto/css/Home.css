@@ -1,0 +1,267 @@
+.container {
+  width: 100%;
+  height: auto;
+  font-family: 'Poppins';
+}
+
+.imagem {
+  padding: 10px;
+  width: 200px;
+  position: relative;
+
+}
+
+.row h3 p{
+  text-align: center;
+  font-size: 2em;
+  font-weight: 600;
+  margin-bottom: 80px;
+}
+
+.card-body {
+  position: relative;
+  border-color: #000000;
+}
+
+
+.col{
+  border: 10px #000000;
+  border-radius: 0%;
+  position: static;
+  width: 300px;
+}
+
+.col:hover #btnVerMais {
+  display: block;
+}
+
+.col:hover #btnVerMais   {
+  opacity: 1;
+}
+
+.card-img-top{
+  position: static;
+
+}
+
+#home{
+  background-color: #6e4cbe;
+  
+}
+
+#footer{
+  background-color: #000;
+  bottom: 0;
+  right: 0;
+  position: relative;
+  width: 100%;
+  margin-top: 30px;
+}
+
+#headerHome{
+  background-color: #000;
+  position: relative;
+  top: 0;
+  right: 0;
+  margin-bottom: 30px;
+}
+
+#btnUser {
+  text-decoration: none;
+  color: #e7e42e;
+  font-size: 20px;
+  margin: 20px;
+  font-family: 'Poppins';
+}
+
+#PesquisaInput {
+  justify-content: center;
+  align-content: center;
+  border-radius: 5px;
+  font-size: 18px;
+  position: relative;
+  width: 50%;
+  left: 25%;
+}
+
+#Perfil{
+  background-color: #1D5C96;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 30px;
+
+}
+
+
+#PesquisaButton {
+  justify-content: center;
+  align-content: center;
+  border-radius: 5px;
+  font-size: 18px;
+  position: relative;
+  width: 50px;
+  right: 20%;
+}
+
+#headerLogin{
+  background-color: #000;
+  position: relative;
+}
+
+#logoLogin{
+  margin-left: 44%;
+}
+
+#btnEnderecoPerfil {
+  justify-content: center;  
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#enderecosCard {
+  margin-bottom: 10px;
+}
+
+#btnEditPerfil {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#btnVerMais{
+  cursor: pointer;
+  border: none;
+  display: none;
+  color: #ffffff;
+  background-color: #000000;
+  width: 50%;
+  opacity: 0;
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+  left: 25%;
+}
+
+#btnComprar{
+  position: absolute;
+  margin-left: 80%;
+  margin-top: 10%;
+  color: #2ea12e;
+  
+}
+
+#FormCadastroCliente {
+  font-family: 'Poppins';
+}
+
+#InfoPessoaisCliente {
+  font-family: 'Poppins';
+  padding: 30px;
+}
+
+#InfoPessoaisCliente label {
+ font-size: larger;
+}
+
+#InfoPessoaisCliente input {
+ font-size: larger;
+}
+
+
+#btnCliente {
+  width: 300px;
+  height: 50px;
+  font-family: 'Poppins';
+}
+
+#pesquisaForm {
+  display: flex;
+  padding: 20px;
+  margin-bottom: 5%;
+}
+
+
+#navHome{
+  font-size: 20px;
+}
+
+#btnLogar{
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border: 2px solid #2ea12e;
+  font-size: large;
+}
+
+#btnCadastro{
+  margin-top: 30px;
+  margin-bottom: 50px;
+  border: 2px solid #000;
+  background-color: #2ea12e;
+}
+
+/*Body*/
+body {
+  font-family: 'Poppins';
+  
+}
+
+ul li {
+  color: #000000;
+}
+
+form button[type="submit"] {
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+  width: 25%;
+  margin: 10px;
+  margin-left: 40%;
+}
+
+/* Estilo do botão de envio do formulário ao passar o mouse */
+form button[type="submit"]:hover {
+  background-color: #2ea12e;
+}
+
+h1{
+  color: #ffffff;
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 15%;
+}
+
+
+a{
+  color: #1D5C96;
+  font-size: 20px;
+  font-style: bold;
+}
+header h1{
+  color: #ffffff;
+
+}
+.container h1{
+  color: #ffffff;
+
+}
+.container label{
+  color: #ffffff;
+
+}
+#telaEndereco label{
+  color: #000;
+
+}
+
+/* Pagamento.php */
+
+.Checkout{
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  background-color: #1D5C96;
+}
