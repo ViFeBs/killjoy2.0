@@ -3,3 +3,11 @@ esse repositório tem como intuito refatorar um projeto em php, esse projeto é 
 
 # documentação
 [Documentacao_PI4_Killjoy.pdf](https://github.com/user-attachments/files/21874142/Documentacao_PI4_Killjoy.pdf)
+
+# rotas
+
+Pagina para clientes( usuarios):
+http://localhost:8080/telas/Home.php
+
+Pagina administrativa:
+http://localhost:8080/telas/Login.html
